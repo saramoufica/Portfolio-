@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+</head>
+<body>
+     <div class="hero-header">
+        <div class="wrapper">
+            <header>
+                <div class="logo">
+                    <div class="logo-text">Portfolio</div>
+                </div>
+                <nav>
+                    <div class="togglebtn">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <ul class="navlinks">
+                        <li><a href="#">Home</a></li>
+                        <li><a href="#">About </a></li>
+                        <li><a href="#">Skills</a></li>
+                        <li><a href="https://in.docworkspace.com/d/sIK7irOZRpvqIsgY">Resume</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="container">
+                 <div class="hero-pic">
+                    <img src="https://i.postimg.cc/ZndtFR7r/5181f69c-252e-4443-b095-fa3c0a864014-removebg-preview.png" alt="profile pic">
+                 </div>
+                 <div class="hero-text">
+                    <h5>Hi ! Its me , <span class="input">Technology Enthusiast</span></h5>
+                    <h1>Sara Moufica </h1>
+                    <p>This is my official Portfolio.</p>
+                    <div class="btn-group">
+                       <a href="https://in.docworkspace.com/d/sIK7irOZRpvqIsgY" download class="btn active">Download CV</a>
+                    </div>
+
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pintrest"></i></a>
+                    </div>
+                 </div>
+            </div>
+        </div>
+     </div>
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.10/typed.min.js"></script>
+     <script>
+         var togglebtn=document.querySelector(".togglebtn");
+         var nav=document.querySelector(".navlinks");
+         var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+
+        var typed=new Typed(".input",{
+            strings:["Technology Enthusiast","BCA Student","Web Developer"],
+            typedSpeed:70,
+            backSpeed:55,
+            loop:true
+        })
+     </script>
+       <section class="about">
+        <div class="main">
+            <img src="https://i.postimg.cc/ZndtFR7r/5181f69c-252e-4443-b095-fa3c0a864014-removebg-preview.png">
+            <div class="about-text">
+                <h2>About Me</h2>
+                <h4>Technology Enthusiast <span>& BCA Student</span></h4>
+                <p>I'm a BCA major student passionate about leveraging technology
+                   to solve real-world challenges. With a focus on software
+                   development, database management and system analysis, I've 
+                   gained expertise in Java, R Programming, and SQL. My projects
+                   range from web applications to database optimization, and I'm
+                   always eager to expand my skills through coding challenges and
+                   tech meetups.</p>
+                 </div>
+        </div>
+       </section>
+      
+       <h1 class="title">My Skills</h1>
+            </div>
+       <section> 
+        <div class= "work-list">
+         <div class="container1" id="skills">         
+                 <h1 class="heading1">Technical Skills</h1>
+             <div class="Technical-bars">
+                <div class="bar"><i style="color:#c95d2e" class='bx bxl-html5'></i>
+                <div class="indfo">
+                    <span>HTML</span>
+                </div>
+            <div class="progress-line html">
+                 <span></span>
+            </div>
+        </div>
+        <div class="bar"><i style="color:#0f22cd" class='fab fa-r-project'></i>
+               <div class="indfo">
+                <span>R Programming</span>
+               </div>
+             <div class="progress-line Rprogramming">
+                <span></span>
+          </div>
+       </div>
+       <div class="bar"><i style="color:#147bbc" class='bx bxl-css3'></i>
+           <div class="indfo">
+            <span>CSS</span>
+           </div>
+           <div class="progress-line css">
+            <span></span>
+          </div>
+       </div>
+        <div class="bar"><i style="color:#fa5008" class='fab fa-database'></i>
+       <div class="indfo">
+        <span>SQL</span>
+       </div>
+       <div class="progress-line SQL">
+        <span></span>
+       </div>
+   </div>
+  </div> 
+ </div>
+<div class="container1">
+    <h1 class="heading1">Professional Skills</h1>
+    <div class="radial-bars">
+        <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100"cy="100" r="80"></circle>
+            <circle class="path path-1" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">80%</div>
+          <div class="text">Creativity</div>
+        </div>
+
+    <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100"cy="100" r="80"></circle>
+              <circle class="path path-2" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">90%</div>
+          <div class="text">Teamwork</div>
+    </div>
+
+    <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100"cy="100" r="80"></circle>
+            <circle class="path path-3" cx="100" cy="100" r="80"></circle>
+          </svg>
+          <div class="percentage">75%</div>
+          <div class="text">Communication</div>
+    </div>
+    
+    <div class="radial-bar">
+          <svg x="0px" y="0px" viewBox="0 0 200 200">
+              <circle class="progress-bar" cx="100"cy="100" r="80"></circle>
+            <circle class="path path-4" cx="100" cy="100" r="80"></circle>
+          </svg>
+        <div class="percentage">85%</div>
+        <div class="text">Management skill</div>
+    </div>
+    </div>
+</div>
+</section>
+
+
+<div id="contact">
+    <div class="containers">
+        <div class="row">
+          <div class="contact-left">
+            <h1 class="sub-title">Contact Me</h1>
+            <p><i class="fas fa-paper-plane"></i>moufi1401@gmail.com</p>
+            <p><i class="fas fa-phone-square-alt"></i>8248176265</p>
+            <div class="social-icons">
+                <a href=""><i class="fab fa-facebook"></i></a>
+                <a href=""><i class="fab fa-linkedin"></i></a>
+                <a href=""><i class="fab fa-instagram"></i></a>
+                <a href=""><i class="fab fa-pintrest"></i></a>
+          </div>   
+        </div>
+        <div class="contact-right">
+            <form>
+                <input type="text" name="Name" placeholder="Your Name"required>
+                <input type="email" name="email" placeholder="Your Email"required>
+                <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                <button type="submit" class="btn btn2">Submit</button>
+            </form>
+        </div>
+    </div>
+
+</div>
+</body>
+</html>
